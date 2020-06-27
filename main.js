@@ -5,7 +5,7 @@ function Run() {
   var t = new Tinkoff(token, account, 'INVEST');
   
   var tinkoffOperationsSheet = SpreadsheetApp.getActive().getSheetByName('Тинькофф Сделки');
-  var tinkoffClosedOperationsSheet = SpreadsheetApp.getActive.getSheetByName('Тинькофф Закрытые сделки');
+  var tinkoffClosedOperationsSheet = SpreadsheetApp.getActive().getSheetByName('Тинькофф Закрытые сделки');
   var tinkoffAccountSheet = SpreadsheetApp.getActive().getSheetByName('Тинькофф Счёт');
   
   spreadsheetFill = new SpreadsheetFill(t, tinkoffOperationsSheet, tinkoffAccountSheet);
